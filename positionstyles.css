@@ -65,28 +65,38 @@
   margin-left: -10; 
 } 
 /* Activity 3 styles */ 
-.content3 {
-  /* This is the parent of the activity 3 boxes. */
+content3 {
+  display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
 }
 .red3 {
   width: 100px; 
   height: 100px; 
-  background-color: red; 
+  background-color: red;
+  grid-column: 1 / 2; 
 } 
 .green3 {
   width: 100px; 
   height: 100px; 
   background-color: green;
+  grid-column: 2 / 3;
 } 
 .yellow3 {
   width: 100px; 
   height: 100px; 
-  background-color: gold; 
+  background-color: gold;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 } 
 .blue3 {
   width: 100px;
   height: 100px; 
-  background-color: blue; 
+  background-color: blue;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}  
 } 
 /* Activity 4 styles */ 
 .content4 {
